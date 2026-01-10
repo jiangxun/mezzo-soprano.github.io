@@ -209,12 +209,41 @@
         .hero-title, .hero-subtitle {
             word-wrap: break-word;
         }
+         /* 手机浏览按钮样式（可放到主样式表中） */
+  .mobile-view-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 24px;
+    z-index: 9999;
+    display: inline-block;
+    background: linear-gradient(135deg,#ff7a18,#af002d);
+    color: #fff;
+    padding: 14px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 28px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    text-decoration: none;
+    transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+    opacity: 0.98;
+  }
+  .mobile-view-btn:active { transform: translateY(1px); }
+  /* 在大屏幕上也保持明显，但可隐藏在极大屏幕（可选） */
+  @media(min-width:1200px){
+    .mobile-view-btn { right: 36px; bottom: 36px; padding: 12px 16px; }
+  }
+  /* 可选： 在桌面上不遮挡若干 UI 时，显示一个小图标样式 */
+  @media(min-width:900px){
+    .mobile-view-btn { font-size:15px; padding:12px 14px; }
+  }
+
     </style>
   <base target="_blank">
 </head>
 
   <body>
     <!-- Fixed Table of Contents -->
+      <a href="H5.html" class="mobile-view-btn" title="在手机样式下打开页面">手机浏览</a>
     <nav class="toc-fixed">
       <div class="mb-8">
         <h2 class="serif text-xl font-bold text-gray-800 mb-4">目录导航</h2>
@@ -1742,5 +1771,6 @@
         });
     </script>
   
+
 
 </body></html>
