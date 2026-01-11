@@ -1,0 +1,1768 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>世界各国女中音歌曲推荐 - 穿越文化的声音魅力</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <style>
+        :root {
+            --earth-light: #f9f7f4;
+            --earth-medium: #e8e1d4;
+            --earth-dark: #d4c4b0;
+            --accent-gold: #d4af37;
+            --text-dark: #2c1810;
+            --text-medium: #5a4a3a;
+            --text-light: #8a7868;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--earth-light);
+            color: var(--text-dark);
+        }
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(44, 24, 16, 0.7) 0%, rgba(90, 74, 58, 0.4) 100%);
+        }
+        
+        .toc-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100vh;
+            background: linear-gradient(180deg, var(--earth-medium) 0%, var(--earth-light) 100%);
+            border-right: 3px solid var(--accent-gold);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+        }
+        
+        .section-divider {
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-gold) 0%, transparent 100%);
+            margin: 3rem 0;
+        }
+        
+        .artist-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(232, 225, 212, 0.3) 100%);
+            border-left: 4px solid var(--accent-gold);
+            transition: all 0.3s ease;
+        }
+        
+        .artist-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(44, 24, 16, 0.15);
+        }
+        
+        .citation-link {
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        
+        .citation-link:hover {
+            color: var(--text-dark);
+            text-decoration: underline;
+        }
+        
+        .genre-tag {
+            background: var(--earth-medium);
+            color: var(--text-dark);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.25rem 0.25rem 0.25rem 0;
+        }
+        
+        /* Mermaid diagram styling */
+        .mermaid-container {
+            display: flex;
+            justify-content: center;
+            min-height: 300px;
+            max-height: 800px;
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mermaid-container .mermaid {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            cursor: grab;
+            transition: transform 0.3s ease;
+            transform-origin: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            touch-action: none; /* 防止触摸设备上的默认行为 */
+            -webkit-user-select: none; /* 防止文本选择 */
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .mermaid-container .mermaid svg {
+            max-width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .mermaid-container .mermaid:active {
+            cursor: grabbing;
+        }
+
+        .mermaid-container.zoomed .mermaid {
+            height: 100%;
+            width: 100%;
+            cursor: grab;
+        }
+
+        .mermaid-controls {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            gap: 10px;
+            z-index: 20;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .mermaid-control-btn {
+            background: #ffffff;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: #374151;
+            font-size: 14px;
+            min-width: 36px;
+            height: 36px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mermaid-control-btn:hover {
+            background: #f8fafc;
+            border-color: #3b82f6;
+            color: #3b82f6;
+            transform: translateY(-1px);
+        }
+
+        .mermaid-control-btn:active {
+            transform: scale(0.95);
+        }
+        
+        /* Prevent horizontal overflow on small screens */
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+        }
+        
+        /* Responsive fixes for small screens */
+        @media (max-width: 1024px) {
+            .toc-fixed {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+            .mermaid-control-btn:not(.reset-zoom) {
+                display: none;
+            }
+            .mermaid-controls {
+                top: auto;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+        
+        /* Ensure text wraps properly */
+        .hero-title, .hero-subtitle {
+            word-wrap: break-word;
+        }
+
+
+    </style>
+  <base target="_blank">
+</head>
+
+  <body>
+    <!-- Fixed Table of Contents -->
+     <a href="H5.html" class="mobile-view-btn" title="在手机样式下打开页面">手机浏览</a>
+<!-- 手机浏览按钮 END -->
+    <nav class="toc-fixed">
+      <div class="mb-8">
+        <h2 class="serif text-xl font-bold text-gray-800 mb-4">目录导航</h2>
+        <div class="w-12 h-0.5 bg-yellow-600 mb-6"></div>
+      </div>
+
+      <ul class="space-y-3 text-sm">
+        <li>
+          <a href="#hero" class="citation-link hover:text-gray-800 transition-colors">引言</a>
+        </li>
+        <li>
+          <a href="#chinese" class="citation-link hover:text-gray-800 transition-colors">华语乐坛的女中音之声</a>
+          <ul class="ml-4 mt-2 space-y-1 text-xs">
+            <li>
+              <a href="#chinese-classical" class="citation-link hover:text-gray-800 transition-colors">经典女中音歌唱家</a>
+            </li>
+            <li>
+              <a href="#chinese-pop" class="citation-link hover:text-gray-800 transition-colors">流行乐坛的低音魅力</a>
+            </li>
+            <li>
+              <a href="#chinese-contemporary" class="citation-link hover:text-gray-800 transition-colors">当代流行歌手的低音表现</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#western" class="citation-link hover:text-gray-800 transition-colors">欧美流行与爵士乐中的女中音</a>
+          <ul class="ml-4 mt-2 space-y-1 text-xs">
+            <li>
+              <a href="#western-jazz" class="citation-link hover:text-gray-800 transition-colors">灵魂与爵士乐的传奇</a>
+            </li>
+            <li>
+              <a href="#western-pop" class="citation-link hover:text-gray-800 transition-colors">流行乐坛的低音力量</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#latin" class="citation-link hover:text-gray-800 transition-colors">拉丁美洲的热情女中音</a>
+          <ul class="ml-4 mt-2 space-y-1 text-xs">
+            <li>
+              <a href="#latin-rock" class="citation-link hover:text-gray-800 transition-colors">拉丁摇滚与流行</a>
+            </li>
+            <li>
+              <a href="#latin-salsa" class="citation-link hover:text-gray-800 transition-colors">萨尔萨与古巴音乐</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#classical" class="citation-link hover:text-gray-800 transition-colors">古典音乐中的女中音</a>
+          <ul class="ml-4 mt-2 space-y-1 text-xs">
+            <li>
+              <a href="#classical-baroque" class="citation-link hover:text-gray-800 transition-colors">巴洛克与古典主义时期</a>
+            </li>
+            <li>
+              <a href="#classical-romantic" class="citation-link hover:text-gray-800 transition-colors">浪漫主义时期</a>
+            </li>
+            <li>
+              <a href="#classical-contemporary" class="citation-link hover:text-gray-800 transition-colors">当代著名女中音歌唱家</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#european" class="citation-link hover:text-gray-800 transition-colors">欧洲其他语言的女中音歌曲</a>
+          <ul class="ml-4 mt-2 space-y-1 text-xs">
+            <li>
+              <a href="#european-french" class="citation-link hover:text-gray-800 transition-colors">法语香颂与艺术歌曲</a>
+            </li>
+            <li>
+              <a href="#european-italian" class="citation-link hover:text-gray-800 transition-colors">意大利民谣与歌剧</a>
+            </li>
+            <li>
+              <a href="#european-german" class="citation-link hover:text-gray-800 transition-colors">德语艺术歌曲</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#world" class="citation-link hover:text-gray-800 transition-colors">世界音乐与东南亚的低音之声</a>
+          <ul class="ml-4 mt-2 space-y-1 text-xs">
+            <li>
+              <a href="#world-music" class="citation-link hover:text-gray-800 transition-colors">世界音乐中的女中音</a>
+            </li>
+            <li>
+              <a href="#asian-pop" class="citation-link hover:text-gray-800 transition-colors">亚洲流行乐坛的低音歌手</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <a href="H5.html" class="mobile-view-btn" title="在手机样式下打开页面">手机浏览</a>
+      <a href="mezzo-2.html" class="mobile-view-btn" title="在手机样式下打开页面">推荐女中音歌曲</a>
+<!-- 手机浏览按钮 END -->
+
+      <div class="mt-12 pt-6 border-t border-gray-300">
+        <p class="text-xs text-gray-600 leading-relaxed">
+          探索世界各地女中音歌手的独特魅力，感受穿越文化和语言的声音艺术。
+        </p>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section id="hero" class="relative min-h-[70vh] flex items-center">
+        <div class="absolute inset-0">
+          <img src="https://kimi-web-img.moonshot.cn/img/placeholder-0620/%E5%9B%BE%E7%89%879.png" alt="女中音歌手在舞台上演唱的剪影" class="w-full h-full object-cover" size="wallpaper" aspect="wide" style="photo" query="女中音歌手舞台剪影" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+          <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-8 py-16">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Main Title Area -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <img src="zhutao-1.jpg" alt="朱韬" class="w-full sm:w-32 sm:h-32 object-cover rounded-xl shadow-xl border-2 border-yellow-400/30" />
+                <div class="inline-block px-4 py-2 bg-yellow-600/20 rounded-full border border-yellow-600/30">
+                  <span class="text-yellow-100 text-sm font-medium">音乐文化研究</span>
+                  <span class="text-yellow-100 text-sm font-medium">朱韬女中音歌唱家（抖音号：90786575582）</span>
+                </div>
+              </div>
+
+              <h1 class="serif text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight hero-title">
+                <span class="italic">穿越文化的声音</span>
+                <br/>
+                <span class="text-yellow-200">女中音之歌</span>
+              </h1>
+
+              <p class="text-lg sm:text-xl text-gray-200 max-w-2xl leading-relaxed hero-subtitle">
+                探索世界各地女中音歌手的独特魅力，从华语乐坛的醇厚经典到欧美流行的深情款款，
+                从拉丁美洲的热情奔放到古典音乐的技艺精湛，感受跨越语言、流派和时代的声音艺术。
+              </p>
+            </div>
+
+            <!-- Key Highlights Grid -->
+            <div class="lg:col-span-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                  <div class="text-yellow-300 text-2xl sm:text-3xl font-bold serif">7</div>
+                  <div class="text-white/80 text-xs sm:text-sm">文化区域</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                  <div class="text-yellow-300 text-2xl sm:text-3xl font-bold serif">50+</div>
+                  <div class="text-white/80 text-xs sm:text-sm">传奇歌手</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                  <div class="text-yellow-300 text-2xl sm:text-3xl font-bold serif">多元</div>
+                  <div class="text-white/80 text-xs sm:text-sm">音乐风格</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                  <div class="text-yellow-300 text-2xl sm:text-3xl font-bold serif">跨时代</div>
+                  <div class="text-white/80 text-xs sm:text-sm">声音传承</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="max-w-6xl mx-auto px-4 sm:px-8 py-16">
+        <div class="prose prose-lg max-w-none">
+          <blockquote class="border-l-4 border-yellow-600 pl-8 py-4 text-xl italic text-gray-700 leading-relaxed bg-yellow-50/50">
+            &#34;世界各地的女中音歌曲以其独特的醇厚音色和深沉情感，为不同文化和音乐风格增添了丰富的色彩。
+            从华语乐坛中充满草原风情的德德玛、醇厚经典的蔡琴，到欧美流行乐坛中深情款款的Adele和复古忧郁的Lana Del Rey，
+            再到拉丁美洲热情奔放的Celia Cruz和古典音乐领域中技艺精湛的各位歌唱家，女中音的声音跨越了语言、流派和时代。&#34;
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Chinese Music Section -->
+      <section id="chinese" class="py-16 bg-gradient-to-r from-yellow-50 to-orange-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+          <div class="text-center mb-16">
+            <h2 class="serif text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+              华语乐坛的女中音之声
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              华语乐坛拥有众多以其独特女中音或偏低音域而闻名的歌手，她们的音乐风格横跨古典、流行、民谣等多个领域，
+              为听众带来了丰富而深刻的听觉体验。
+            </p>
+          </div>
+
+          <!-- Classical Contralto Singers -->
+          <div id="chinese-classical" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">经典女中音歌唱家</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-microphone text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">德德玛</h4>
+                    <p class="text-yellow-600 font-medium mb-4">蒙古族草原风情的代表</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      德德玛是中国蒙古族女中音歌唱家，是当代中国最具代表性的女中音之一。
+                      她的声音<strong>浑厚醇美，音域宽阔</strong>，充满了浓郁的草原气息，被誉为&#34;草原夜莺&#34;。
+                      <a href="mezzo-1.html" class="citation-link" target="_blank">[女中音歌曲]</a>
+                      <a href="mezzo-1.html" class="citation-link" target="_blank">[女中音歌曲]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">草原音乐</span>
+                      <span class="genre-tag">民族声乐</span>
+                      <span class="genre-tag">美声唱法</span>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《美丽的草原我的家》以其优美的旋律和深情而富有画面感的演绎，迅速风靡全国，成为歌颂内蒙古草原风光的经典之作。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-music text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">关牧村</h4>
+                    <p class="text-yellow-600 font-medium mb-4">抒情女中音的经典演绎</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      关牧村，国家一级演员、著名女中音歌唱家，以其<strong>浑厚而富有磁性</strong>的嗓音和饱含深情的演唱风格，
+                      在华语乐坛独树一帜。
+                      <a href="mezzo-1.html" class="citation-link" target="_blank">[288]</a>
+                      <a href="mezzo-1.html" class="citation-link" target="_blank">[379]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">抒情歌曲</span>
+                      <span class="genre-tag">民族音乐</span>
+                      <span class="genre-tag">艺术歌曲</span>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《打起手鼓唱起歌》、《祝酒歌》、《吐鲁番的葡萄熟了》等，至今仍被广泛传唱，成为那个时代的经典印记。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-star text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">罗天婵</h4>
+                    <p class="text-yellow-600 font-medium mb-4">新中国第一代抒情女中音</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      罗天婵被誉为新中国第一位杰出的抒情女中音歌唱家，她的歌声具有一种独特的艺术魅力，
+                      凡是听过她演唱的人，都会被其深深打动。她的声音<strong>醇厚而富有表现力</strong>，
+                      能够驾驭多种风格的歌曲。
+                      <a href="mezzo-1.html" class="citation-link" target="_blank">[407]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">抒情艺术</span>
+                      <span class="genre-tag">经典传承</span>
+                      <span class="genre-tag">时代印记</span>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《思乡曲》等作品，充分展现了她醇厚的音色和细腻的情感处理能力，成为流传甚广的经典。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pop Music Contralto -->
+          <div id="chinese-pop" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">流行乐坛的低音魅力</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">徐小凤</h4>
+                <p class="text-yellow-600 font-medium mb-3">香港乐坛的殿堂级低音</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  徐小凤以标志性的女中音唱腔和朴实无华的演唱风格，成为<strong>首位荣获香港金针奖的女歌手</strong>。
+                  她的歌声低沉而富有磁性，平稳中蕴含着极强的穿透力。
+                  
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700"><strong>代表作：</strong>《心恋》、《风雨同路》、《顺流逆流》</p>
+                </div>
+              </div>
+
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">蔡琴</h4>
+                <p class="text-yellow-600 font-medium mb-3">醇厚磁性的经典女声</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  蔡琴以其<strong>醇厚、磁性的女中音</strong>和深情款款的演唱风格，被誉为华语乐坛的&#34;常青树&#34;。
+                  她的声音温暖而富有质感，仿佛一杯陈年的美酒。
+                  
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700"><strong>代表作：</strong>《恰似你的温柔》、《你的眼神》、《被遗忘的时光》</p>
+                </div>
+              </div>
+
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">降央卓玛</h4>
+                <p class="text-yellow-600 font-medium mb-3">被誉为&#34;最美女中音&#34;</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  降央卓玛以<strong>纯净、辽阔而富有穿透力</strong>的女中音，被誉为&#34;天下最美的女中音&#34;。
+                  她的名字在藏语中意为&#34;传说中的妙音仙女&#34;。
+                  
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700"><strong>代表作：</strong>《卓玛》、《走天涯》、《呼伦贝尔大草原》</p>
+                </div>
+              </div>
+
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">朱韬</h4>
+                <p class="text-yellow-600 font-medium mb-3">被誉为&#34;传承经典最美女中音&#34;</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  朱韬以<strong>极具磁性的抒情见长，最大的特点就是善于用情，表演与歌唱融为一体，她的音色甜美柔暖，音质纯净清亮，音域宽广流畅，时而高亢华丽，时而饱满低沉，她的胸腔共鸣丰满结实，演唱行腔委婉而又劲道 ，声音穿透力强，情真意切，韵味真醇，她吐字清晰却又不影响音型和共鸣，语法讲究而富有韵律感，丰富的音色变化更增添了歌声的感染力,做到了声音色彩的多样化。</strong>朱韬的女中音，被誉为&#34;天下最美的女中音&#34;。
+                  。
+                  
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700"><strong>代表作：</strong>《大道无垠》、《夏日阳光》、《我是你大河中浪花一朵》</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contemporary Pop Contralto -->
+          <div id="chinese-contemporary" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">当代流行歌手的低音表现</h3>
+
+            <div class="space-y-8">
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-heart text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">莫文蔚</h4>
+                    <p class="text-yellow-600 font-medium mb-4">慵懒性感的低音魅力</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      莫文蔚以慵懒、性感而富有磁性的&#34;烟嗓&#34;和前卫多变的音乐风格，在华语乐坛独树一帜。
+                      她的声音独特，带有一种漫不经心的性感，能够轻易地营造出一种迷离、暧昧的氛围。
+                      
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">另类流行</span>
+                      <span class="genre-tag">电子音乐</span>
+                      <span class="genre-tag">实验音乐</span>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《阴天》、《盛夏的果实》、《忽然之间》、《这世界那么多人》等，
+                        在《如果没有你》中展现了她低沉而富有情感的嗓音魅力。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-microphone-alt text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">张碧晨</h4>
+                    <p class="text-yellow-600 font-medium mb-4">宽广音域中的低音掌控力</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      张碧晨以宽广的音域、磁性的嗓音和强烈的情感表达能力，在新生代歌手中脱颖而出。
+                      她的声音极具穿透力，能够驾驭多种曲风，尤其擅长演绎情感浓烈的歌曲。
+                    
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">流行摇滚</span>
+                      <span class="genre-tag">影视音乐</span>
+                      <span class="genre-tag">情感表达</span>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《凉凉》、《光的方向》、《年轮》等，
+                        在演唱《红玫瑰》、《她说》等歌曲时，充分展现了其在中低音区的表现力。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Western Music Section -->
+      <section id="western" class="py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+          <div class="text-center mb-16">
+            <h2 class="serif text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+              欧美流行与爵士乐中的女中音
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              欧美流行与爵士乐领域历来是女中音歌手大放异彩的舞台。从爵士乐的黄金时代到当代流行乐坛，
+              无数拥有独特低音魅力的女歌手，以其醇厚、性感、富有磁性的嗓音，为听众带来了无数经典作品。
+            </p>
+          </div>
+
+          <!-- Jazz and Soul Legends -->
+          <div id="western-jazz" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">灵魂与爵士乐的传奇</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-crown text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">Etta James</h4>
+                    <p class="text-yellow-600 font-medium mb-4">灵魂乐的标志性女中音</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      Etta James是美国著名的蓝调、灵魂乐和R&amp;B歌手，被誉为&#34;灵魂乐女王&#34;之一。
+                      她以其<strong>强大而富有情感的嗓音</strong>，以及跨越多种音乐风格的演唱能力而闻名于世。
+                      <a href="https://shop.luckyvoice.com/blogs/news/best-karaoke-songs-for-contralto-female" class="citation-link" target="_blank">[331]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">灵魂乐</span>
+                      <span class="genre-tag">蓝调</span>
+                      <span class="genre-tag">R&amp;B</span>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《At Last》以其优美的旋律和深情而富有磁性的演绎，
+                        成为了婚礼和浪漫场合的经典曲目。《Something&#39;s Got a Hold on Me》展现了她强大的声音爆发力。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-piano text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">Nina Simone</h4>
+                    <p class="text-yellow-600 font-medium mb-4">兼具深度与灵魂的独特嗓音</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      Nina Simone是一位集歌手、钢琴家、作曲家和社会活动家于一身的传奇人物。
+                      她的音乐风格横跨爵士、蓝调、古典、民谣和福音等多个领域。
+                      <a href="https://www.udiscovermusic.com/stories/50-best-jazz-singers/" class="citation-link" target="_blank">[422]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">爵士</span>
+                      <span class="genre-tag">古典</span>
+                      <span class="genre-tag">社会活动</span>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《Feeling Good》是一首充满力量与自由感的歌曲，
+                        Simone以其极具穿透力的女中音，将一种挣脱束缚、迎接新生的喜悦之情表达得淋漓尽致。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-music text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">Ella Fitzgerald</h4>
+                    <p class="text-yellow-600 font-medium mb-4">爵士乐第一夫人的经典演绎</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      Ella Fitzgerald被誉为&#34;爵士乐第一夫人&#34;，是20世纪最伟大的爵士歌手之一。
+                      她的声音纯净、甜美，音准极佳，以其无与伦比的<strong>&#34;拟声唱法&#34;（Scat Singing）</strong>技巧而闻名于世。
+                      <a href="https://en.wikipedia.org/wiki/List_of_mezzo-sopranos_in_non-classical_music" class="citation-link" target="_blank">[415]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">爵士乐</span>
+                      <span class="genre-tag">拟声唱法</span>
+                      <span class="genre-tag">经典演绎</span>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《Summertime》以其温暖而富有母性的女中音演绎得如摇篮曲般宁静安详。
+                        《How High the Moon》则充分展示了她的&#34;拟声唱法&#34;才华。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-heart text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">Diana Krall</h4>
+                    <p class="text-yellow-600 font-medium mb-4">当代爵士女王的迷人声线</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      Diana Krall是当代爵士乐坛最具影响力的女歌手之一，以其<strong>低沉、性感的嗓音</strong>和精湛的钢琴技艺而闻名。
+                      她的声音是典型的女中音，带有一种独特的&#34;烟熏&#34;质感。
+                      <a href="https://www.azcentral.com/story/entertainment/music/2015/08/17/best-diana-krall-songs-essential-playlist/31864501/" class="citation-link" target="_blank">[264]</a>
+                      <a href="https://open.spotify.com/album/4JpIjDFmX1kemiSgPb2xBY" class="citation-link" target="_blank">[265]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">当代爵士</span>
+                      <span class="genre-tag">钢琴演奏</span>
+                      <span class="genre-tag">跨界音乐</span>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《The Look of Love》以其慵懒而富有磁性的女中音，将这首歌曲演绎得充满了浪漫和诱惑。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Western Pop Contralto -->
+          <div id="western-pop" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">流行乐坛的低音力量</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">Amy Winehouse</h4>
+                <p class="text-yellow-600 font-medium mb-3">复古灵魂乐的沙哑低音</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  Amy Winehouse的声音<strong>沙哑而富有磁性</strong>，带有明显的女中音特质。
+                  她的音乐风格深受20世纪60年代的灵魂乐和爵士乐影响。
+                  <a href="https://vocalrangetest.com/contralto-vocal-range/" class="citation-link" target="_blank">[18]</a>
+                  <a href="https://shop.luckyvoice.com/blogs/news/best-karaoke-songs-for-contralto-female" class="citation-link" target="_blank">[331]</a>
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700"><strong>代表作：</strong>《Back to Black》、《Rehab》</p>
+                </div>
+              </div>
+
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">Adele</h4>
+                <p class="text-yellow-600 font-medium mb-3">深情款款的流行女中音</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  Adele以强大的嗓音和深情的演唱风格而闻名。她的声音是典型的女中音，音域宽广，音色醇厚，充满了情感的张力。
+                  <a href="https://shop.luckyvoice.com/blogs/news/best-karaoke-songs-for-contralto-female" class="citation-link" target="_blank">[331]</a>
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700"><strong>代表作：</strong>《Someone Like You》、《Easy on Me》</p>
+                </div>
+              </div>
+
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">Billie Eilish</h4>
+                <p class="text-yellow-600 font-medium mb-3">另类流行的独特低音</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  Billie Eilish的声音<strong>低沉而富有磁性</strong>，带有明显的女中音特质。
+                  她的音乐风格独特，融合了流行、电子、另类摇滚等多种元素。
+                  <a href="https://www.gigwise.com/stunning-contralto-songs-you-need-to-hear/" class="citation-link" target="_blank">[333]</a>
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700"><strong>代表作：</strong>《Bad Guy》、《Everything I Wanted》</p>
+                </div>
+              </div>
+
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">Lana Del Rey</h4>
+                <p class="text-yellow-600 font-medium mb-3">复古忧郁的低吟浅唱</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  Lana Del Rey以独特的复古风格和忧郁气质而闻名。她的声音低沉而富有磁性，带有明显的女中音特质。
+                  <a href="https://songsforkaraoke.blogspot.com/2020/02/what-to-sing-in-karaoke-4-pop-songs-for.html" class="citation-link" target="_blank">[338]</a>
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700"><strong>代表作：</strong>《Blue Jeans》、《Video Games》</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Latin American Music Section -->
+      <section id="latin" class="py-16 bg-gradient-to-r from-red-50 to-orange-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+          <div class="text-center mb-16">
+            <h2 class="serif text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+              拉丁美洲的热情女中音
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              拉丁美洲的音乐以其热情奔放、节奏鲜明而闻名于世，而在这片充满活力的音乐土地上，
+              女中音歌手们同样以其独特的嗓音魅力，为拉丁音乐增添了别样的色彩。
+            </p>
+          </div>
+
+          <!-- Latin Rock and Pop -->
+          <div id="latin-rock" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">拉丁摇滚与流行</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-guitar text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">Andrea Echeverri</h4>
+                    <p class="text-orange-600 font-medium mb-4">哥伦比亚拉丁摇滚的标志性声音</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      Andrea Echeverri是哥伦比亚著名拉丁摇滚乐队Aterciopelados的主唱，
+                      以其<strong>丰富、深沉的女中音</strong>和富有社会意识的歌词而闻名。
+                      <a href="https://www.billboard.com/lists/best-female-latin-pop-artists-of-all-time/" class="citation-link" target="_blank">[343]</a>
+                      <a href="https://www.billboard.com/lists/best-female-latin-pop-artists-of-all-time/" class="citation-link" target="_blank">[497]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">拉丁摇滚</span>
+                      <span class="genre-tag">社会意识</span>
+                      <span class="genre-tag">民谣摇滚</span>
+                    </div>
+                    <div class="bg-orange-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作品：</strong>《Baracunatana》、《Florecita Rockera》、《Bolero Falaz》等，
+                        充分展现了Echeverri标志性的女中音魅力。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-music text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">Ana Bárbara</h4>
+                    <p class="text-orange-600 font-medium mb-4">墨西哥Grupera音乐的&#34;女王&#34;</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      Ana Bárbara是墨西哥著名的女歌手，被誉为&#34;Grupera音乐女王&#34;，
+                      在Banda、Norteña和Grupera等墨西哥传统音乐领域取得了巨大的成功。
+                      她的声音充满了力量与情感，尤其在<strong>中低音区，展现出独特的魅力</strong>。
+                      <a href="https://www.billboard.com/lists/best-female-latin-pop-artists-of-all-time/" class="citation-link" target="_blank">[497]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">Grupera音乐</span>
+                      <span class="genre-tag">墨西哥传统</span>
+                      <span class="genre-tag">拉丁流行</span>
+                    </div>
+                    <div class="bg-orange-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作品：</strong>《La Tracalera》和《Como Me Haces Falta》等，
+                        充分展现了她在中低音区的出色表现力。2024年荣获Billboard拉丁女性音乐奖终身成就奖。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Salsa and Cuban Music -->
+          <div id="latin-salsa" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">萨尔萨与古巴音乐</h3>
+
+            <div class="artist-card p-8 rounded-xl">
+              <div class="flex items-start space-x-6">
+                <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-fire text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="serif text-2xl font-bold text-gray-800 mb-3">Celia Cruz</h4>
+                  <p class="text-orange-600 font-medium mb-4">萨尔萨音乐的传奇&#34;女王&#34;</p>
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    Celia Cruz（1925-2003）是萨尔萨音乐史上最具传奇色彩的人物，被誉为&#34;萨尔萨女王&#34;。
+                    她以其<strong>&#34;丰富而富有表现力的女中音&#34;</strong>和标志性的&#34;¡Azúcar!&#34;（糖！）的呐喊而闻名于世。
+                    <a href="https://www.billboard.com/lists/best-female-latin-pop-artists-of-all-time/" class="citation-link" target="_blank">[343]</a>
+                    <a href="https://www.billboard.com/lists/best-female-latin-pop-artists-of-all-time/" class="citation-link" target="_blank">[497]</a>
+                  </p>
+                  <div class="mb-4">
+                    <span class="genre-tag">萨尔萨音乐</span>
+                    <span class="genre-tag">古巴音乐</span>
+                    <span class="genre-tag">拉丁传奇</span>
+                  </div>
+                  <div class="bg-orange-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-700">
+                      <strong>代表作：</strong>《La Negra Tiene Tumbao》和《Guantanamera》等，
+                      都成为了萨尔萨音乐的经典之作。Cruz被认为是20世纪最重要的拉丁音乐家之一。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Classical Music Section -->
+      <section id="classical" class="py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+          <div class="text-center mb-16">
+            <h2 class="serif text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+              古典音乐中的女中音/女低音
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              在古典音乐的浩瀚星空中，女中音（Mezzo-soprano）和女低音（Contralto）扮演着至关重要的角色。
+              她们的声部介于女高音和男高音之间，以其独特的音色和表现力，为歌剧、清唱剧和艺术歌曲等体裁注入了丰富的情感色彩。
+            </p>
+          </div>
+
+          <!-- Baroque and Classical Period -->
+          <div id="classical-baroque" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">巴洛克与古典主义时期</h3>
+
+            <div class="space-y-8">
+              <div class="artist-card p-8 rounded-xl">
+                <h4 class="serif text-2xl font-bold text-gray-800 mb-6">亨德尔与维瓦尔第的歌剧咏叹调</h4>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">亨德尔《里纳尔多》- 《Lascia ch&#39;io pianga》</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      巴洛克时期的作曲家乔治·弗里德里克·亨德尔为女中音和女低音创作了大量精彩的歌剧咏叹调。
+                      《Lascia ch&#39;io pianga》（让我哭泣）是一首非常著名的女中音/女低音曲目，
+                      这首歌曲以其优美的旋律和深情的歌词，表达了对自由的渴望和对命运的无奈。
+                      <a href="https://www.opera-arias.com/arias/mezzo/" class="citation-link" target="_blank">[15]</a>
+                      <a href="https://vocalist.org.uk/contralto-repertoire" class="citation-link" target="_blank">[26]</a>
+                    </p>
+                  </div>
+                  <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">维瓦尔第《格里塞尔达》- 《Agitata da due venti》</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      维瓦尔第的歌剧《格里塞尔达》（Griselda）中的咏叹调《Agitata da due venti》（被两股风吹动）
+                      则是一首技巧性极高的女中音曲目，这首歌曲通过快速的音阶和华丽的装饰音，
+                      展现了女中音声部的灵活性和表现力。
+                      <a href="https://imslp.org/wiki/Imperial_Edition_Contralto_Songs_(Various)" class="citation-link" target="_blank">[307]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <h4 class="serif text-2xl font-bold text-gray-800 mb-6">莫扎特歌剧中的女中音角色</h4>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">《费加罗的婚礼》- 凯鲁比诺</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      在歌剧《费加罗的婚礼》中，<strong>凯鲁比诺（Cherubino）</strong>一角通常由女中音或女低音扮演。
+                      这个角色是一个情窦初开的少年，其咏叹调<strong>《你们可知道》（Voi che sapete）</strong>
+                      是女中音的经典曲目之一。
+                      <a href="https://operavision.eu/feature/summer-hits-mezzo-soprano" class="citation-link" target="_blank">[43]</a>
+                      <a href="https://www.halleonard.com/product/48008368/contralto-songs" class="citation-link" target="_blank">[308]</a>
+                    </p>
+                  </div>
+                  <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">《女人心》- 多拉贝拉</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      另一个著名的女中音角色是歌剧《女人心》中的<strong>多拉贝拉（Dorabella）</strong>，
+                      这也是Teresa Berganza的成名角色之一。
+                      莫扎特为这些角色创作的咏叹调旋律优美，情感细腻。
+                      <a href="https://sin80.com/artist/teresa-berganza" class="citation-link" target="_blank">[437]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Romantic Period -->
+          <div id="classical-romantic" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">浪漫主义时期</h3>
+
+            <div class="space-y-8">
+              <div class="artist-card p-8 rounded-xl">
+                <h4 class="serif text-2xl font-bold text-gray-800 mb-6">威尔第歌剧中的女中音角色</h4>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">《阿伊达》- 安奈瑞斯</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      朱塞佩·威尔第的歌剧中，女中音角色往往具有强烈的戏剧冲突和复杂的内心世界。
+                      歌剧《阿伊达》中的埃及公主<strong>安奈瑞斯（Amneris）</strong>就是一个典型的威尔第式女中音角色。
+                      她深爱着拉达梅斯，但拉达梅斯却爱着她的奴隶阿伊达。
+                      <a href="https://opera-rara.com/project_category/mezzo-soprano" class="citation-link" target="_blank">[309]</a>
+                      <a href="https://www.operabase.com/maria-jose-montiel-a11233/zh" class="citation-link" target="_blank">[461]</a>
+                    </p>
+                  </div>
+                  <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">《麦克白》- 麦克白夫人</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      在歌剧《麦克白》中，女低音角色<strong>麦克白夫人（Lady Macbeth）</strong>
+                      则是一个野心勃勃、心狠手辣的女人，她的咏叹调以其阴郁的旋律和充满力量的演唱，
+                      展现了女低音声部的独特魅力。
+                      <a href="https://opera-rara.com/project_category/mezzo-soprano" class="citation-link" target="_blank">[309]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <h4 class="serif text-2xl font-bold text-gray-800 mb-6">马勒的交响声乐作品</h4>
+                <div class="bg-yellow-50 p-6 rounded-lg">
+                  <p class="text-gray-700 leading-relaxed">
+                    古斯塔夫·马勒的交响声乐作品也为女中音提供了广阔的展示空间。
+                    他的<strong>《大地之歌》（Das Lied von der Erde）</strong>和<strong>《第二交响曲》（&#34;复活&#34;）</strong>等作品中，
+                    女中音独唱部分都占有重要地位。这些作品要求歌手不仅要有优美的音色，
+                    还要有强大的气息控制能力和深刻的情感理解力。
+                    <a href="https://www.opentix.life/event/1398089407448002565" class="citation-link" target="_blank">[455]</a>
+                  </p>
+                  <div class="mt-4">
+                    <span class="genre-tag">交响声乐</span>
+                    <span class="genre-tag">浪漫主义</span>
+                    <span class="genre-tag">艺术歌曲</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contemporary Classical Contralto -->
+          <div id="classical-contemporary" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">当代著名女中音歌唱家</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">Marian Anderson</h4>
+                <p class="text-yellow-600 font-medium mb-3">美国传奇女低音</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  Marian Anderson是美国历史上具有里程碑意义的女低音歌唱家，她不仅以其温暖而深沉的嗓音闻名于世，
+                  更以其在民权运动中的杰出贡献而被载入史册。
+                  <a href="https://www.classical-music.com/features/artists/best-contraltos-ever" class="citation-link" target="_blank">[356]</a>
+                  <a href="https://www.opera-arias.com/singers/contralto/" class="citation-link" target="_blank">[516]</a>
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700">
+                    <strong>历史意义：</strong>第一位在纽约大都会歌剧院演唱的非裔美国人
+                  </p>
+                </div>
+              </div>
+
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">Ewa Podleś</h4>
+                <p class="text-yellow-600 font-medium mb-3">波兰女低音歌唱家</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  Ewa Podleś是当代最杰出的女低音歌唱家之一，以其<strong>惊人的音域、强大的声音控制力和卓越的花腔技巧</strong>而闻名。
+                  <a href="https://en.wikipedia.org/wiki/List_of_operatic_contraltos" class="citation-link" target="_blank">[417]</a>
+                  <a href="https://www.opera-arias.com/singers/contralto/" class="citation-link" target="_blank">[516]</a>
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700">
+                    <strong>演唱特点：</strong>声音深沉而富有穿透力，能驾驭从巴洛克到现代的各种风格
+                  </p>
+                </div>
+              </div>
+
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-3">Nathalie Stutzmann</h4>
+                <p class="text-yellow-600 font-medium mb-3">法国女中音歌唱家与指挥家</p>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  Nathalie Stutzmann是一位多才多艺的法国女中音歌唱家和指挥家，以其深沉、富有韵味的女中音
+                  和对巴洛克音乐的精湛演绎而闻名。
+                  <a href="https://www.wrti.org/arts-desk/2021-01-20/classical-album-of-the-week-contralto-nathalie-stutzmann-sings-and-conducts-baroque-works" class="citation-link" target="_blank">[503]</a>
+                  <a href="https://www.wrti.org/arts-desk/2021-01-20/classical-album-of-the-week-contralto-nathalie-stutzmann-sings-and-conducts-baroque-works" class="citation-link" target="_blank">[420]</a>
+                </p>
+                <div class="bg-yellow-50 p-3 rounded-lg">
+                  <p class="text-xs text-gray-700">
+                    <strong>双重身份：</strong>现任费城交响乐团首席客座指挥和挪威克里斯蒂安桑交响乐团首席指挥
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- European Music Section -->
+      <section id="european" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+          <div class="text-center mb-16">
+            <h2 class="serif text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+              欧洲其他语言的女中音歌曲
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              欧洲大陆拥有丰富多样的音乐传统，除了英语和德语区，法语、意大利语、西班牙语等地区的音乐
+              同样为世界贡献了众多杰出的女中音作品。
+            </p>
+          </div>
+
+          <!-- French Chanson -->
+          <div id="european-french" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">法语香颂与艺术歌曲</h3>
+
+            <div class="space-y-8">
+              <div class="artist-card p-8 rounded-xl">
+                <h4 class="serif text-2xl font-bold text-gray-800 mb-6">法国香颂中的女中音演绎</h4>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">Édith Piaf - 《La Vie en Rose》</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      Édith Piaf虽然主要以女高音著称，但她的经典作品<strong>《La Vie en Rose》（玫瑰人生）</strong>
+                      却以其深情的演绎，成为一首适合女中音演唱的经典之作。这首歌描绘了对爱情的美好向往，歌词充满了诗意。
+                    </p>
+                  </div>
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">Jacques Brel - 《Ne me quitte pas》</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      Jacques Brel的作品也常被女中音歌手翻唱，如<strong>《Ne me quitte pas》（不要离开我）</strong>，
+                      这首歌曲以其悲伤的旋律和深情的歌词，表达了对逝去爱情的无限眷恋。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <h4 class="serif text-2xl font-bold text-gray-800 mb-6">德彪西与福雷的艺术歌曲</h4>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">德彪西 - 《Clair de Lune》（月光）</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      克洛德·德彪西的艺术歌曲<strong>《Clair de Lune》（月光）</strong>是一首非常著名的女中音曲目，
+                      这首歌曲以其朦胧的意境和优美的旋律，描绘了一幅月光下的美丽画卷。
+                      <a href="http://www.louiseashcroft.com/wp-content/uploads/2014/08/Louise-Ashcroft-Repertoire-List-2015.pdf" class="citation-link" target="_blank">[311]</a>
+                    </p>
+                  </div>
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <h5 class="font-bold text-gray-800 mb-3">福雷 - 《Les Berceaux》（摇篮）</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                      加布里埃尔·福雷的艺术歌曲<strong>《Les Berceaux》（摇篮）</strong>则以其温柔的旋律和充满母性的歌词，
+                      表达了对孩子的无限爱意。这些作品对歌手的演唱技巧和音乐表现力都有着极高的要求。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Italian Music -->
+          <div id="european-italian" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">意大利民谣与歌剧</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="artist-card p-8 rounded-xl">
+                <h4 class="serif text-2xl font-bold text-gray-800 mb-6">意大利民谣中的女中音</h4>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    意大利民谣以其欢快的节奏和朴实的情感而深受人们喜爱。许多意大利民谣都非常适合女中音演唱，
+                    如<strong>《Santa Lucia》（桑塔露琪亚）</strong>和<strong>《O Sole Mio》（我的太阳）</strong>等。
+                    这些歌曲以其优美的旋律和富有生活气息的歌词，展现了意大利人民的热情和对生活的热爱。
+                  </p>
+                  <div>
+                    <span class="genre-tag">民谣传统</span>
+                    <span class="genre-tag">意大利文化</span>
+                    <span class="genre-tag">生活气息</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <h4 class="serif text-2xl font-bold text-gray-800 mb-6">歌剧选段中的女中音咏叹调</h4>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                  <h5 class="font-bold text-gray-800 mb-3">罗西尼《塞维利亚的理发师》- 《Una voce poco fa》</h5>
+                  <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                    焦阿基诺·罗西尼的歌剧《塞维利亚的理发师》（Il Barbiere di Siviglia）中的咏叹调
+                    <strong>《Una voce poco fa》（刚才我听到一个声音）</strong>是一首非常著名的女中音曲目，
+                    这首歌曲以其华丽的装饰音和充满戏剧性的情感，展现了女中音声部的灵活性和表现力。
+                    <a href="http://www.louiseashcroft.com/wp-content/uploads/2014/08/Louise-Ashcroft-Repertoire-List-2015.pdf" class="citation-link" target="_blank">[311]</a>
+                  </p>
+                  <div>
+                    <span class="genre-tag">歌剧艺术</span>
+                    <span class="genre-tag">声乐技巧</span>
+                    <span class="genre-tag">戏剧表现</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- German Lieder -->
+          <div id="european-german" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">德语艺术歌曲</h3>
+
+            <div class="space-y-6">
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-4">舒伯特与舒曼的艺术歌曲</h4>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                  <p class="text-gray-700 leading-relaxed">
+                    舒伯特被誉为&#34;艺术歌曲之王&#34;，他创作了600多首艺术歌曲。他的代表作<strong>《Der Tod und das Mädchen》（死神与少女）</strong>
+                    是一首非常著名的女中音/女低音曲目，这首歌曲以其阴郁的旋律和充满戏剧性的对话，展现了生与死的永恒主题。
+                    舒曼的艺术歌曲也同样优美动人，他的作品常常充满了诗意和情感，非常适合女中音演唱。
+                  </p>
+                </div>
+              </div>
+
+              <div class="artist-card p-6 rounded-xl">
+                <h4 class="serif text-xl font-bold text-gray-800 mb-4">勃拉姆斯的女中音作品</h4>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                  <p class="text-gray-700 leading-relaxed">
+                    约翰内斯·勃拉姆斯的艺术歌曲和声乐作品也为女中音提供了丰富的曲目。
+                    他的<strong>《女低音狂想曲》（Alto Rhapsody）</strong>是一部为女低音、男声合唱和管弦乐队而作的杰作，
+                    这部作品以其深沉的情感和优美的旋律，展现了女低音声部的独特魅力。
+                    勃拉姆斯的歌曲集，如《四首严肃的歌》（Vier ernste Gesänge），
+                    也包含了适合女中音演唱的深刻而感人的作品。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- World Music Section -->
+      <section id="world" class="py-16 bg-gradient-to-r from-green-50 to-teal-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+          <div class="text-center mb-16">
+            <h2 class="serif text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+              世界音乐与东南亚的低音之声
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              在世界音乐的广阔天地和东南亚多元的文化背景下，女中音歌手以其独特的音色和富有地域特色的演唱风格，
+              为听众带来了别样的音乐体验。
+            </p>
+          </div>
+
+          <!-- World Music Contralto -->
+          <div id="world-music" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">世界音乐中的女中音</h3>
+
+            <div class="artist-card p-8 rounded-xl">
+              <div class="flex items-start space-x-6">
+                <div class="w-20 h-20 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-globe text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="serif text-2xl font-bold text-gray-800 mb-3">Razia Said</h4>
+                  <p class="text-teal-600 font-medium mb-4">马达加斯加的世界音乐之声</p>
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    Razia Said是一位来自马达加斯加的歌手，她的音乐融合了传统的马尔加什音乐与现代流行、
+                    爵士和世界音乐元素。她的声音<strong>低沉而富有磁性</strong>，充满了异国情调。
+                    Razia Said的歌曲常常用她的母语马尔加什语演唱，歌词内容涉及环境保护、文化认同和社会议题。
+                  </p>
+                  <div class="mb-4">
+                    <span class="genre-tag">世界音乐</span>
+                    <span class="genre-tag">马尔加什传统</span>
+                    <span class="genre-tag">环境保护</span>
+                  </div>
+                  <div class="bg-teal-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-700">
+                      <strong>代表作品：</strong>专辑《The Malagasy Dream》等作品，
+                      为听众打开了一扇了解马达加斯加音乐的窗口，展现了对家乡和自然的热爱。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asian Pop Contralto -->
+          <div id="asian-pop" class="mb-20">
+            <h3 class="serif text-3xl font-bold text-gray-800 mb-8">亚洲流行乐坛的低音歌手</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-star text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">宇多田光 (Hikaru Utada)</h4>
+                    <p class="text-teal-600 font-medium mb-4">日本流行音乐的革新者</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      宇多田光是日本乐坛最具影响力的歌手之一，以其独特的音乐风格和强大的创作能力而闻名。
+                      虽然她的音域非常宽广，但她的声音在<strong>中低音区同样表现出色</strong>，充满了独特的魅力。
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">J-Pop</span>
+                      <span class="genre-tag">R&amp;B融合</span>
+                      <span class="genre-tag">创作歌手</span>
+                    </div>
+                    <div class="bg-teal-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作：</strong>《First Love》和《Automatic》等，
+                        展现了她出色的演唱技巧和对情感的细腻表达，为日本流行音乐的发展做出了重要贡献。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-music text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">Kyla (菲律宾)</h4>
+                    <p class="text-teal-600 font-medium mb-4">菲律宾R&amp;B和灵魂乐的代表</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      Kyla是菲律宾乐坛一位备受尊敬的R&amp;B和灵魂乐歌手，以其强大的嗓音和宽广的音域而闻名。
+                      虽然她的音域能够轻松达到高音，但她同样以其在<strong>中低音区的醇厚音色</strong>和出色的控制力而著称。
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">R&amp;B</span>
+                      <span class="genre-tag">灵魂乐</span>
+                      <span class="genre-tag">菲律宾音乐</span>
+                    </div>
+                    <div class="bg-teal-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>演唱特点：</strong>演唱风格深受国际R&amp;B巨星的影响，声音充满了情感和力量，
+                        能够驾驭各种复杂的旋律和节奏，在菲律宾被认为是该领域的顶尖歌手之一。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <div class="artist-card p-8 rounded-xl">
+                <div class="flex items-start space-x-6">
+                  <div class="w-20 h-20 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-heart text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="serif text-2xl font-bold text-gray-800 mb-3">丽莎（黄焕婵）</h4>
+                    <p class="text-teal-600 font-medium mb-4">新加坡的&#34;低音歌后&#34;</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                      丽莎（Lisa Wong，艺名丽莎），是新加坡在20世纪70至80年代非常受欢迎的歌手，
+                      以其<strong>低沉、富有磁性的嗓音</strong>而闻名。
+                      <a href="https://baike.baidu.com/item/%E9%BB%84%E7%84%95%E5%A9%B5/935532" class="citation-link" target="_blank">[300]</a>
+                      <a href="https://baike.baidu.com/item/%E9%BB%84%E7%84%95%E5%A9%B5/935532" class="citation-link" target="_blank">[448]</a>
+                    </p>
+                    <div class="mb-4">
+                      <span class="genre-tag">华语流行</span>
+                      <span class="genre-tag">低音特色</span>
+                      <span class="genre-tag">新加坡音乐</span>
+                    </div>
+                    <div class="bg-teal-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-700">
+                        <strong>代表作品：</strong>《相思河畔》和《午夜香吻》等，在当时以甜美高音为主流的华语乐坛中独树一帜，
+                        她的低音不仅稳定而富有共鸣，而且在处理歌曲情感时细腻入微。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="py-16 bg-gradient-to-r from-yellow-100 to-orange-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+          <div class="text-center">
+            <h2 class="serif text-4xl lg:text-5xl font-bold text-gray-800 mb-8">
+              女中音之声：穿越文化的永恒魅力
+            </h2>
+            <p class="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-12">
+              从华语乐坛的醇厚经典到欧美流行的深情款款，从拉丁美洲的热情奔放到古典音乐的技艺精湛，
+              女中音的声音跨越了语言、流派和时代。她们的演唱不仅展现了声乐的技巧，更传递了深刻的情感与故事，
+              成为全球音乐宝库中不可或缺的一部分。
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div class="bg-white/70 p-6 rounded-xl">
+                <div class="text-yellow-600 text-3xl mb-4">
+                  <i class="fas fa-microphone-alt"></i>
+                </div>
+                <h3 class="serif text-xl font-bold text-gray-800 mb-3">声音特色</h3>
+                <p class="text-gray-700 text-sm">醇厚、深沉、富有磁性的独特音色</p>
+              </div>
+              <div class="bg-white/70 p-6 rounded-xl">
+                <div class="text-yellow-600 text-3xl mb-4">
+                  <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3 class="serif text-xl font-bold text-gray-800 mb-3">文化融合</h3>
+                <p class="text-gray-700 text-sm">跨越语言、地域和文化的音乐桥梁</p>
+              </div>
+              <div class="bg-white/70 p-6 rounded-xl">
+                <div class="text-yellow-600 text-3xl mb-4">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="serif text-xl font-bold text-gray-800 mb-3">情感表达</h3>
+                <p class="text-gray-700 text-sm">深刻、细腻、富有感染力的情感传递</p>
+              </div>
+            </div>
+
+            <blockquote class="text-2xl italic text-gray-800 serif max-w-3xl mx-auto leading-relaxed">
+              &#34;女中音的声音，是大地的回响，是情感的低语，是文化的传承。
+              在这个多元化的音乐世界中，她们用自己的方式诠释着人类的共同情感。&#34;
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="text-center">
+            <h3 class="serif text-2xl font-bold mb-4">探索更多音乐魅力</h3>
+            <p class="text-gray-400 mb-8">
+              女中音之声，穿越文化的声音艺术
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+              <span class="bg-yellow-600/20 px-4 py-2 rounded-full">华语音乐</span>
+              <span class="bg-yellow-600/20 px-4 py-2 rounded-full">欧美流行</span>
+              <span class="bg-yellow-600/20 px-4 py-2 rounded-full">拉丁音乐</span>
+              <span class="bg-yellow-600/20 px-4 py-2 rounded-full">古典艺术</span>
+              <span class="bg-yellow-600/20 px-4 py-2 rounded-full">世界音乐</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#f9f7f4',
+                primaryTextColor: '#2c1810',
+                primaryBorderColor: '#d4af37',
+                lineColor: '#8a7868',
+                secondaryColor: '#e8e1d4',
+                tertiaryColor: '#d4c4b0',
+                background: '#ffffff',
+                mainBkg: '#f9f7f4',
+                secondBkg: '#e8e1d4',
+                tertiaryBkg: '#d4c4b0',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '14px'
+            },
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            },
+            sequence: {
+                useMaxWidth: true,
+                wrap: true
+            },
+            gantt: {
+                useMaxWidth: true
+            }
+        });
+
+        // Initialize Mermaid Controls for zoom and pan
+        function initializeMermaidControls() {
+            const containers = document.querySelectorAll('.mermaid-container');
+
+            containers.forEach(container => {
+            const mermaidElement = container.querySelector('.mermaid');
+            let scale = 1;
+            let isDragging = false;
+            let startX, startY, translateX = 0, translateY = 0;
+
+            // 触摸相关状态
+            let isTouch = false;
+            let touchStartTime = 0;
+            let initialDistance = 0;
+            let initialScale = 1;
+            let isPinching = false;
+
+            // Zoom controls
+            const zoomInBtn = container.querySelector('.zoom-in');
+            const zoomOutBtn = container.querySelector('.zoom-out');
+            const resetBtn = container.querySelector('.reset-zoom');
+            const fullscreenBtn = container.querySelector('.fullscreen');
+
+            function updateTransform() {
+                mermaidElement.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+
+                if (scale > 1) {
+                container.classList.add('zoomed');
+                } else {
+                container.classList.remove('zoomed');
+                }
+
+                mermaidElement.style.cursor = isDragging ? 'grabbing' : 'grab';
+            }
+
+            if (zoomInBtn) {
+                zoomInBtn.addEventListener('click', () => {
+                scale = Math.min(scale * 1.25, 4);
+                updateTransform();
+                });
+            }
+
+            if (zoomOutBtn) {
+                zoomOutBtn.addEventListener('click', () => {
+                scale = Math.max(scale / 1.25, 0.3);
+                if (scale <= 1) {
+                    translateX = 0;
+                    translateY = 0;
+                }
+                updateTransform();
+                });
+            }
+
+            if (resetBtn) {
+                resetBtn.addEventListener('click', () => {
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+                });
+            }
+
+            if (fullscreenBtn) {
+                fullscreenBtn.addEventListener('click', () => {
+                if (container.requestFullscreen) {
+                    container.requestFullscreen();
+                } else if (container.webkitRequestFullscreen) {
+                    container.webkitRequestFullscreen();
+                } else if (container.msRequestFullscreen) {
+                    container.msRequestFullscreen();
+                }
+                });
+            }
+
+            // Mouse Events
+            mermaidElement.addEventListener('mousedown', (e) => {
+                if (isTouch) return; // 如果是触摸设备，忽略鼠标事件
+
+                isDragging = true;
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                mermaidElement.style.cursor = 'grabbing';
+                updateTransform();
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging && !isTouch) {
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                if (isDragging && !isTouch) {
+                isDragging = false;
+                mermaidElement.style.cursor = 'grab';
+                updateTransform();
+                }
+            });
+
+            document.addEventListener('mouseleave', () => {
+                if (isDragging && !isTouch) {
+                isDragging = false;
+                mermaidElement.style.cursor = 'grab';
+                updateTransform();
+                }
+            });
+
+            // 获取两点之间的距离
+            function getTouchDistance(touch1, touch2) {
+                return Math.hypot(
+                touch2.clientX - touch1.clientX,
+                touch2.clientY - touch1.clientY
+                );
+            }
+
+            // Touch Events - 触摸事件处理
+            mermaidElement.addEventListener('touchstart', (e) => {
+                isTouch = true;
+                touchStartTime = Date.now();
+
+                if (e.touches.length === 1) {
+                // 单指拖动
+                isPinching = false;
+                isDragging = true;
+
+                const touch = e.touches[0];
+                startX = touch.clientX - translateX;
+                startY = touch.clientY - translateY;
+
+                } else if (e.touches.length === 2) {
+                // 双指缩放
+                isPinching = true;
+                isDragging = false;
+
+                const touch1 = e.touches[0];
+                const touch2 = e.touches[1];
+                initialDistance = getTouchDistance(touch1, touch2);
+                initialScale = scale;
+                }
+
+                e.preventDefault();
+            }, { passive: false });
+
+            mermaidElement.addEventListener('touchmove', (e) => {
+                if (e.touches.length === 1 && isDragging && !isPinching) {
+                // 单指拖动
+                const touch = e.touches[0];
+                translateX = touch.clientX - startX;
+                translateY = touch.clientY - startY;
+                updateTransform();
+
+                } else if (e.touches.length === 2 && isPinching) {
+                // 双指缩放
+                const touch1 = e.touches[0];
+                const touch2 = e.touches[1];
+                const currentDistance = getTouchDistance(touch1, touch2);
+
+                if (initialDistance > 0) {
+                    const newScale = Math.min(Math.max(
+                    initialScale * (currentDistance / initialDistance),
+                    0.3
+                    ), 4);
+                    scale = newScale;
+                    updateTransform();
+                }
+                }
+
+                e.preventDefault();
+            }, { passive: false });
+
+            mermaidElement.addEventListener('touchend', (e) => {
+                // 重置状态
+                if (e.touches.length === 0) {
+                isDragging = false;
+                isPinching = false;
+                initialDistance = 0;
+
+                // 延迟重置isTouch，避免鼠标事件立即触发
+                setTimeout(() => {
+                    isTouch = false;
+                }, 100);
+                } else if (e.touches.length === 1 && isPinching) {
+                // 从双指变为单指，切换为拖动模式
+                isPinching = false;
+                isDragging = true;
+
+                const touch = e.touches[0];
+                startX = touch.clientX - translateX;
+                startY = touch.clientY - translateY;
+                }
+
+                updateTransform();
+            });
+
+            mermaidElement.addEventListener('touchcancel', (e) => {
+                isDragging = false;
+                isPinching = false;
+                initialDistance = 0;
+
+                setTimeout(() => {
+                isTouch = false;
+                }, 100);
+
+                updateTransform();
+            });
+
+            // Enhanced wheel zoom with better center point handling
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const rect = container.getBoundingClientRect();
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const delta = e.deltaY > 0 ? 0.9 : 1.1;
+                const newScale = Math.min(Math.max(scale * delta, 0.3), 4);
+
+                // Adjust translation to zoom towards center
+                if (newScale !== scale) {
+                const scaleDiff = newScale / scale;
+                translateX = translateX * scaleDiff;
+                translateY = translateY * scaleDiff;
+                scale = newScale;
+
+                if (scale <= 1) {
+                    translateX = 0;
+                    translateY = 0;
+                }
+
+                updateTransform();
+                }
+            });
+
+            // Initialize display
+            updateTransform();
+            });
+        }
+
+        // Initialize Mermaid Controls when the DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMermaidControls();
+        });
+
+        // Smooth scrolling for TOC links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Highlight active section in TOC
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const tocLinks = document.querySelectorAll('.toc-fixed a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('text-yellow-800', 'font-semibold');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-yellow-800', 'font-semibold');
+                }
+            });
+        });
+    </script>
+  
+
+</body></html>
